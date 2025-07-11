@@ -3,7 +3,29 @@
 	"dockerFile": "Dockerfile",
 	"customizations": {
 		"vscode": {
-			"extensions": [		"ms-azuretools.vscode-azurefunctions", "ms-azuretools.vscode-azurestaticwebapps",]
+			"settings": {
+				"prettier.printWidth": 120,
+				"terminal.integrated.shell.linux": "/bin/bash",
+				"editor.defaultFormatter": "ms-python.black-formatter",
+				"[typescript]": {
+					"editor.formatOnSave": true
+				},
+				"[javascript]": {
+					"editor.formatOnSave": true
+				},
+				"[json]": {
+					"editor.formatOnSave": true
+				},
+				"workbench.iconTheme": "material-icon-theme"
+			},
+			"extensions": [
+				"PKief.material-icon-theme",
+				"GitHub.copilot", // GitHub Copilot
+				"ms-azuretools.vscode-docker", // Docker
+				"humao.rest-client",
+				"ms-azuretools.vscode-azurefunctions",
+				"ms-azuretools.vscode-azurestaticwebapps"
+			]
 		}
-	}	
+	}
 }
