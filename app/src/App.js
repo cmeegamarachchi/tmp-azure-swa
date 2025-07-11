@@ -9,7 +9,7 @@ function App() {
     const fetchMostWanted = async () => {
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:7071/api/get_most_wanted');
+        const response = await fetch('api/get_most_wanted');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
